@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>encuesta de salud</title>
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<header class="header">
+	<h1 id="title" class="text-center">LIBRES DE COVID</h1>
+  	<h1 id="title" class="text-center">Encuesta Sobre Impacto de Vacunacion</h1>
+		<p id="description" class="description text-center">
+			Queremos cuidar tu salud
+		</p>
+	</header>
+	<form id="survey-form">
+		<div class="form-group">
+			<label id="name-label" for="name">Nombre</label>
+			<input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Ingresa tus nombre"
+        required
+      />
+    </div>
+			<div class="form-group">
+				<label id="email-label" for="email">Correo</label>
+				<input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Ingresa tu correo"
+        required
+      />
+    </div>
+				<div class="form-group">
+					<label id="number-label" for="number"
+        >Edad<span class="clue">(optional)</span></label>
+					<input
+        type="number"
+        id="number"
+        min="1"
+        max="120"
+        class="form-control"
+        placeholder="Ingresa tu edad"
+      />
+    </div>
+					<div class="form-group">
+						<p>Region</p>
+						<select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Selecciona</option>
+        <option value="Zona Andina">Zona Andina</option>
+        <option value="El Caribe">El Caribe</option>
+        <option value="El Pasifico">El Pasifico</option>
+        <option value="La Amazonia">La Amazonia</option>
+        <option value="Insular">Insular</option>
+        <option value="Marvel Cómics">La Orinoquia</option>
+      </select>
+					</div>
+
+					<div class="form-group">
+						<p>Dosis vacunacion</p>
+						<label>
+        <input
+          name="user-recommend"
+          value="Primera Dosis"
+          type="radio"
+          class="input-radio"
+          checked
+        />Primera Dosis</label>
+						<label>
+        <input
+          name="user-recommend"
+          value="Segunda Dosis"
+          type="radio"
+          class="input-radio"
+        />Segunda Dosis</label>
+
+						<label
+        ><input
+          name="user-recommend"
+          value="No vacunado"
+          type="radio"
+          class="input-radio"
+        />No vacunado</label>
+					</div>
+
+					<div class="form-group">
+						<p>
+							Sintomas que has presentado los ultimos dias
+							<span class="clue">(Selecione)</span>
+						</p>
+
+						<label>
+              <input
+          value="T"
+          type="checkbox"
+          class="input-checkbox"
+        />Fiebre</label>
+						<label>
+        <input
+          value="Vomito"
+          type="checkbox"
+          class="input-checkbox"
+        />Vomito</label>
+					
+          	<label>
+          <input
+          value="Tos"
+          type="checkbox"
+          class="input-checkbox"
+        />Tos</label>
+						<label
+        ><input
+          value="Goteo nasal"
+          type="checkbox"
+          class="input-checkbox"
+        />Goteo nasal</label>
+						<label
+        ><input
+          value="Sangrado rectal"
+          type="checkbox"
+          class="input-checkbox"
+        />Sangrado rectal</label>
+						<label
+        ><input
+          value="Dolores de cabeza"
+          type="checkbox"
+          class="input-checkbox"
+        />Dolores de cabeza</label>
+						<label
+        ><input
+          value="Dolores musculares"
+          type="checkbox"
+          class="input-checkbox"
+        />Dolores musculares</label>
+
+					</div>
+
+					<div class="form-group">
+						<p>¿Tienes alguna observación?</p>
+						<textarea
+        id="comments"
+        class="input-textarea"
+        name="observaciones"
+        placeholder="Ingresa tus observaciones"
+      ></textarea>
+					</div>
+
+					<div class="form-group">
+						<button type="submit" id="submit" class="submit-button">
+        Enviar
+      </button>
+					</div>
+	</form>
+</div>
+</body>
+</html>
